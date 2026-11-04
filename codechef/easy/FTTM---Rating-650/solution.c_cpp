@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	string S, T;
+    
+    // Read whole lines since S can contain spaces (as shown in the sample)
+    getline(cin, S);
+    getline(cin, T);
+    
+    // Check if T is a substring of S
+    if (S.find(T) != string::npos) {
+        cout << "YES\n";
+    } else {
+        cout << "NO\n";
+    }
+    
+    return 0;
+
+}
