@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int x;
+        cin >> x;
+        string s;
+        cin >> s;
+        
+        int carlsen_points = 0;
+        int chef_points = 0;
+        
+        for (char c : s) {
+            if (c == 'C') {
+                carlsen_points += 2;
+            } else if (c == 'N') {
+                chef_points += 2;
+            } else {
+                carlsen_points += 1;
+                chef_points += 1;
+            }
+        }
+        
+        if (carlsen_points > chef_points) {
+            cout << 60 * x << "\n";
+        } else if (carlsen_points < chef_points) {
+            cout << 40 * x << "\n";
+        } else {
+            cout << 55 * x << "\n";
+        }
+    }
+    return 0;
+}
