@@ -39,9 +39,9 @@ Output: [2]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 89.49%)  
-**Memory:** 54.7 MB (beats 43.02%)  
-**Submitted:** 2026-11-07T19:15:17.105Z  
+**Runtime:** 3 ms (beats 80.85%)  
+**Memory:** 54.7 MB (beats 45.85%)  
+**Submitted:** 2026-11-07T19:17:23.427Z  
 
 ```cpp
 class Solution {
@@ -68,10 +68,10 @@ public:
         vector<int> freq(n+1,0);
         vector<int> ans;
 
-        for(int i=0;i<nums.size();i++){
+        for(int i=0;i<n;i++){
             freq[nums[i]]++;
         }
-        for(int i=1;i<=nums.size();i++){
+        for(int i=1;i<=n;i++){
             if(freq[i]==0){
                 ans.push_back(i);
             }
