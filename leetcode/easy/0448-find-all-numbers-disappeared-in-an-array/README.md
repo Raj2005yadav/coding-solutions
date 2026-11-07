@@ -39,31 +39,44 @@ Output: [2]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 68.02%)  
-**Memory:** 52.8 MB (beats 96.42%)  
-**Submitted:** 2026-11-05T14:24:49.351Z  
+**Runtime:** 1 ms (beats 89.49%)  
+**Memory:** 54.7 MB (beats 43.02%)  
+**Submitted:** 2026-11-07T19:15:17.105Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
         // Step 1: Mark visited indices by negating the value at that index
-        for (int i = 0; i < nums.size(); ++i) {
-            int idx = abs(nums[i]) - 1;
-            if (nums[idx] > 0) {
-                nums[idx] = -nums[idx];
+        // for (int i = 0; i < nums.size(); ++i) {
+        //     int idx = abs(nums[i]) - 1;
+        //     if (nums[idx] > 0) {
+        //         nums[idx] = -nums[idx];
+        //     }
+        // }
+
+        // // Step 2: Any index with a positive number was never visited
+        // vector<int> result;
+        // for (int i = 0; i < nums.size(); ++i) {
+        //     if (nums[i] > 0) {
+        //         result.push_back(i + 1);
+        //     }
+        // }
+
+        // return result;
+        int n=nums.size();
+        vector<int> freq(n+1,0);
+        vector<int> ans;
+
+        for(int i=0;i<nums.size();i++){
+            freq[nums[i]]++;
+        }
+        for(int i=1;i<=nums.size();i++){
+            if(freq[i]==0){
+                ans.push_back(i);
             }
         }
-
-        // Step 2: Any index with a positive number was never visited
-        vector<int> result;
-        for (int i = 0; i < nums.size(); ++i) {
-            if (nums[i] > 0) {
-                result.push_back(i + 1);
-            }
-        }
-
-        return result;
+        return ans;
     }
 };
 ```
