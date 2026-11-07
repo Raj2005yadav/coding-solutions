@@ -22,10 +22,10 @@ public:
         vector<int> freq(n+1,0);
         vector<int> ans;
 
-        for(int i=0;i<nums.size();i++){
+        for(int i=0;i<n;i++){
             freq[nums[i]]++;
         }
-        for(int i=1;i<=nums.size();i++){
+        for(int i=1;i<=n;i++){
             if(freq[i]==0){
                 ans.push_back(i);
             }
