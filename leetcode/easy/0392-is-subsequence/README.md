@@ -41,22 +41,23 @@ Output: false
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 8.33%)  
-**Memory:** 8.6 MB (beats 27.79%)  
-**Submitted:** 2026-11-04T16:19:34.564Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.6 MB (beats 56.14%)  
+**Submitted:** 2026-11-09T06:15:46.905Z  
 
 ```cpp
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
-        int i = 0, j = 0;
-        while (i < s.length() && j < t.length()) {
-            if (s[i] == t[j]) {
+        int i=0,j=0;
+
+        while(i<s.size() && j<t.size()){
+            if(s[i]==t[j]){
                 i++;
             }
             j++;
         }
-        return i == s.length();
+        return i==s.size();
     }
 };
 ```
