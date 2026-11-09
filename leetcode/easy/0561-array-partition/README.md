@@ -40,9 +40,9 @@ Explanation: The optimal pairing is (2, 1), (2, 5), (6, 6). min(2, 1) + min(2, 5
 ## Solution
 
 **Language:** C++  
-**Runtime:** 13 ms (beats 29.77%)  
-**Memory:** 31.9 MB (beats 94.93%)  
-**Submitted:** 2026-11-09T18:30:38.874Z  
+**Runtime:** 0 ms  
+**Memory:** 8 MB  
+**Submitted:** 2026-11-09T18:30:45.302Z  
 
 ```cpp
 class Solution {
