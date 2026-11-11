@@ -68,7 +68,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:04:35.958Z  
+**Submitted:** 2026-11-11T15:05:30.952Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,6 +77,38 @@ using namespace std;
 int main() {
 	// your code goes here
 
+}
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        string S;
+        cin >> N >> S;
+
+        int count = 0;
+
+        for (int i = 0; i < N; i++) {
+            int first = S[(i + N - 2) % N] - '0';
+            int second = S[(i + N - 1) % N] - '0';
+
+            int lastTwo = first * 10 + second;
+
+            if (lastTwo % 4 == 0) {
+                count++;
+            }
+        }
+
+        cout << count << endl;
+    }
+
+    return 0;
 }
 
 ```
