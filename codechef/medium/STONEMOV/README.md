@@ -65,7 +65,7 @@ The total number of stones moved is $3$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:06:17.746Z  
+**Submitted:** 2026-11-11T15:06:57.585Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,6 +73,42 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<int> A(N);
+
+        for (int i = 0; i < N; i++) {
+            cin >> A[i];
+        }
+
+        vector<int> diff(N + 1, 0);
+
+        int active = 0;
+        long long total = 0;
+
+        for (int i = 0; i < N; i++) {
+            active += diff[i];
+
+            int current = A[i] + active;
+            int x = min(current, N - i - 1);
+
+            total += x;
+
+            if (x > 0) {
+                diff[i + 1]++;
+                diff[i + x + 1]--;
+            }
+        }
+
+        cout << total << endl;
+    }
+
+    return 0;
 
 }
 
