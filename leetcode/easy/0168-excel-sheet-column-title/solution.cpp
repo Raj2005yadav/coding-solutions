@@ -4,12 +4,9 @@ public:
         string ans="";
         while(columnNumber>0){
             columnNumber--;
-
             int rem=columnNumber%26;
-            ans+=('A'+rem);         // letter ki ascii value 
+            ans+=('A'+rem);
             columnNumber/=26;
-
-            
         }
         reverse(ans.begin(),ans.end());
         return ans;
