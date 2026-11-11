@@ -57,9 +57,9 @@ Output: "ZY"
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.6 MB  
-**Submitted:** 2026-11-11T05:15:45.252Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 7.8 MB (beats 53.52%)  
+**Submitted:** 2026-11-11T05:15:50.099Z  
 
 ```cpp
 class Solution {
