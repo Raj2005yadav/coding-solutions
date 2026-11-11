@@ -57,9 +57,9 @@ Output: "ZY"
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.8 MB (beats 53.52%)  
-**Submitted:** 2026-11-11T05:15:50.099Z  
+**Runtime:** 0 ms  
+**Memory:** 7.5 MB  
+**Submitted:** 2026-11-11T05:18:56.089Z  
 
 ```cpp
 class Solution {
@@ -68,12 +68,9 @@ public:
         string ans="";
         while(columnNumber>0){
             columnNumber--;
-
             int rem=columnNumber%26;
-            ans+=('A'+rem);         // letter ki ascii value 
+            ans+=('A'+rem);
             columnNumber/=26;
-
-            
         }
         reverse(ans.begin(),ans.end());
         return ans;
