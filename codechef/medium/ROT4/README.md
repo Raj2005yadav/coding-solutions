@@ -68,7 +68,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:05:30.952Z  
+**Submitted:** 2026-11-11T15:05:38.814Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,15 +76,7 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
-}
-
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    int T;
+	 int T;
     cin >> T;
 
     while (T--) {
@@ -109,7 +101,9 @@ int main() {
     }
 
     return 0;
+
 }
+
 
 ```
 
