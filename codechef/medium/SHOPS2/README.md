@@ -60,7 +60,7 @@ If Chef went to both stores, the cost would be $\ge 200$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:03:34.406Z  
+**Submitted:** 2026-11-11T15:03:50.496Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -84,7 +84,6 @@ void solve() {
 
     ans = min(ans, (long long)d + sumB);
 
-    // Option 3: Visit both shops
     long long bothCost = 2LL * d;
     for (int i = 0; i < n; i++) {
         bothCost += min(a[i], b[i]);
@@ -95,8 +94,6 @@ void solve() {
 }
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
     int t;
     cin >> t;
     while (t--) {
