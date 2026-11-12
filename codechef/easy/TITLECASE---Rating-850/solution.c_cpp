@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	  int T;
+    cin >> T;
+    cin.ignore();
+
+    while (T--) {
+        string s;
+        getline(cin, s);
+
+        int i = 0;
+
+        while (i < s.size()) {
+            int start = i;
+            bool allUpper = true;
+
+            while (i < s.size() && s[i] != ' ') {
+                if (!isupper(s[i])) {
+                    allUpper = false;
+                }
+                i++;
+            }
+
+            if (!allUpper) {
+                s[start] = toupper(s[start]);
+
+                for (int j = start + 1; j < i; j++) {
+                    s[j] = tolower(s[j]);
+                }
+            }
+
+            i++;
+        }
+
+        cout << s << endl;
+    }
+
+    return 0;
+
+}
