@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+
+    // Mark all letters Jeff knows
+    bool known[26] = {false};
+    for (char c : s) {
+        known[c - 'a'] = true;
+    }
+
+    int n;
+    cin >> n;
+
+    while (n--) {
+        string w;
+        cin >> w;
+
+        bool can_read = true;
+        for (char c : w) {
+            if (!known[c - 'a']) {
+                can_read = false;
+                break;
+            }
+        }
+
+        if (can_read) {
+            cout << "Yes\n";
+        } else {
+            cout << "No\n";
+        }
+    }
+
+    return 0;
+}
