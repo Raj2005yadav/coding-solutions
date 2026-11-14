@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    string s;
+    cin >> s;
+    
+    int count_a = 0, count_b = 0;
+    for (char c : s) {
+        if (c == 'a') count_a++;
+        else if (c == 'b') count_b++;
+    }
+    
+    // The minimum flips needed is the count of the less frequent color
+    cout << min(count_a, count_b) << "\n";
+}
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
