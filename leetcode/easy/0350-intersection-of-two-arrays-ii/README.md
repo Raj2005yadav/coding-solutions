@@ -45,28 +45,27 @@ Explanation: [9,4] is also accepted.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 51.98%)  
-**Memory:** 14.6 MB (beats 54.70%)  
-**Submitted:** 2026-11-16T18:42:22.709Z  
+**Runtime:** 2 ms (beats 38.32%)  
+**Memory:** 15 MB (beats 13.83%)  
+**Submitted:** 2026-11-16T18:45:37.988Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
-      unordered_map<int,int>mp;
-      vector<int>ans;
+        unordered_map<int,int>mp;
+        vector<int>ans;
 
-      for(int x:nums1){
-        mp[x]++;
-      }
-
-      for(int x:nums2){
-        if(mp[x]>0){
-            ans.push_back(x);
-            mp[x]--;
+        for(int x:nums1){
+            mp[x]++;
         }
-      }
-      return ans;
+        for(int x:nums2){
+            if(mp[x]>0){
+                ans.push_back(x);
+                mp[x]--;
+            }
+        }
+        return ans;
     }
 };
 ```
