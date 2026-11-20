@@ -42,9 +42,9 @@ As we cannot use any three side lengths to form a triangle of non-zero area, we 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 5 ms (beats 77.30%)  
-**Memory:** 25.6 MB (beats 38.00%)  
-**Submitted:** 2026-11-20T22:07:47.609Z  
+**Runtime:** 8 ms (beats 33.91%)  
+**Memory:** 25.7 MB (beats 38.00%)  
+**Submitted:** 2026-11-20T22:16:23.317Z  
 
 ```cpp
 class Solution {
