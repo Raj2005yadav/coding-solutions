@@ -53,9 +53,9 @@ The diagonal "[1, 2]" has different elements.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-11-21T09:41:05.375Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 21.1 MB (beats 45.21%)  
+**Submitted:** 2026-11-21T09:41:09.413Z  
 
 ```cpp
 class Solution {
