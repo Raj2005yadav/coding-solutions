@@ -70,7 +70,7 @@ Therefore, the answer is 1.
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 30.7 MB (beats 100.00%)  
-**Submitted:** 2026-11-22T03:09:18.033Z  
+**Submitted:** 2026-11-22T03:09:23.198Z  
 
 ```cpp
 class Solution {
