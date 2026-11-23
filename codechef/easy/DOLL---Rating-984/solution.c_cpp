@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+    cin >> t;
+
+    while (t--) {
+        int n;
+        long long k;
+        cin >> n >> k;
+
+        int shotCount = 0;
+        for (int i = 0; i < n; i++) {
+            long long h;
+            cin >> h;
+            if (h > k) {
+                shotCount++;
+            }
+        }
+
+        cout << shotCount << "\n";
+    }
+
+    return 0;
+
+}
