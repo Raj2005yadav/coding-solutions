@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int n;
+        cin >> n;
+
+        int start38_count = 0;
+        int ltime108_count = 0;
+
+        for (int i = 0; i < n; i++) {
+            string code;
+            cin >> code;
+
+            if (code == "START38") {
+                start38_count++;
+            } else if (code == "LTIME108") {
+                ltime108_count++;
+            }
+        }
+
+        cout << start38_count << " " << ltime108_count << "\n";
+    }
+
+    return 0;
+}
