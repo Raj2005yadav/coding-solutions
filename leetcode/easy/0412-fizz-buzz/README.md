@@ -48,9 +48,9 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 48.37%)  
-**Memory:** 12 MB (beats 22.32%)  
-**Submitted:** 2026-11-27T14:30:45.471Z  
+**Runtime:** 1 ms (beats 72.06%)  
+**Memory:** 11.8 MB (beats 48.49%)  
+**Submitted:** 2026-11-27T14:32:35.416Z  
 
 ```cpp
 class Solution {
