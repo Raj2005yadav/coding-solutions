@@ -67,7 +67,7 @@ Therefore, we can clearly see that the maximum amount of money that can be won b
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-28T09:39:47.313Z  
+**Submitted:** 2026-11-28T09:40:15.403Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
